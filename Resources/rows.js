@@ -1,5 +1,6 @@
 var row = function(){
 	var newData = [];
+	db = Titanium.Database.open('redditDb');
 	dbReddit = db.execute('SELECT * FROM redData');
 	while(dbReddit.isValidRow()){
 		var author = dbReddit.fieldByName('author');

@@ -3,10 +3,6 @@ var url = "http://api.reddit.com/";
 var table = Ti.UI.createTableView({top:0,backgroundColor:"#3399FF"});
 var tableData = [];
 var json, reddit, i, row, authorLabel, titleLabel, thumbImg;
-//var dbr = require('app');
-//var db = Titanium.Database.open('redditDb');
-//db.execute('DELETE FROM redData');
-//db.execute('CREATE TABLE IF NOT EXISTS redData (id INTEGER PRIMARY KEY, author TEXT, title TEXT, img TEXT)');
 
 // HTTP Onload Function
 var remoteOnload = function() {
